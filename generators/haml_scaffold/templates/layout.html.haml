@@ -6,7 +6,7 @@
       <%= controller_class_name %>
       |
       = controller.action_name
-    = stylesheet_link_tag '<%= controller_class_name %>'  
+    = stylesheet_link_tag 'application', '<%= controller_class_name.tableize %>'  
   %body
     #content
       - if flash[:notice]
